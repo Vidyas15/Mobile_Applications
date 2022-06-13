@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <TextView
+        android:id="@+id/forecastMornTemp"
+        android:layout_width="74dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="MornTemp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forecastUVI" />
+
+    <TextView
+        android:id="@+id/forecastDayTemp"
+        android:layout_width="74dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="DayTemp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/forecastMornTemp"
+        app:layout_constraintTop_toBottomOf="@+id/forecastUVI" />
+
+    <TextView
+        android:id="@+id/forecastEveTemp"
+        android:layout_width="74dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="EveTemp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/forecastDayTemp"
+        app:layout_constraintTop_toBottomOf="@+id/forecastUVI" />
+
+    <TextView
+        android:id="@+id/forecastNgtTemp"
+        android:layout_width="74dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="NgtTemp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/forecastEveTemp"
+        app:layout_constraintTop_toBottomOf="@+id/forecastUVI" />
+
+    <TextView
+        android:id="@+id/DtDy"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Date_and_Day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HgLwTemp"
+        android:layout_width="141dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="High/Low Temp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DtDy" />
+
+    <TextView
+        android:id="@+id/forecastDesc"
+        android:layout_width="141dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HgLwTemp" />
+
+    <TextView
+        android:id="@+id/precipitation"
+        android:layout_width="141dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="precipitation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forecastDesc" />
+
+    <TextView
+        android:id="@+id/forecastUVI"
+        android:layout_width="141dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="UV Index"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precipitation" />
+
+    <TextView
+        android:id="@+id/forecastMornTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="8am"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forecastMornTemp" />
+
+    <TextView
+        android:id="@+id/forecastDayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="1pm"
+        app:layout_constraintStart_toEndOf="@+id/forecastMornTime"
+        app:layout_constraintTop_toBottomOf="@+id/forecastDayTemp" />
+
+    <TextView
+        android:id="@+id/forecastEveTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="5pm"
+        app:layout_constraintStart_toEndOf="@+id/forecastDayTime"
+        app:layout_constraintTop_toBottomOf="@+id/forecastEveTemp" />
+
+    <TextView
+        android:id="@+id/forecastNightTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="4dp"
+        android:text="11pm"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/forecastEveTime"
+        app:layout_constraintTop_toBottomOf="@+id/forecastNgtTemp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

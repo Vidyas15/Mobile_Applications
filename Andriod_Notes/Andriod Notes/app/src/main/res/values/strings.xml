@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Andriod Notes</string>
+    <string name="file_name">Notes.json</string>
+</resources>

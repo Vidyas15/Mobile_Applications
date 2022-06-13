@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <View
+        android:id="@+id/colorView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/DayRV"
+        android:layout_width="35dp"
+        android:layout_height="20dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Day"/>
+
+    <TextView
+        android:id="@+id/TimeRV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Time"/>
+
+    <TextView
+        android:id="@+id/TempRV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Temp"/>
+
+    <TextView
+        android:id="@+id/DescRV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Desc"/>
+</LinearLayout>
